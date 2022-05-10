@@ -1,0 +1,388 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+/* google font  */
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 200vh;
+
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* navbar style  */
+nav {
+    width: 100%;
+    max-width: 1980px;
+    position: absolute;
+    inset: 0 0 100% 0;
+
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-list {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: opacity 300ms ease;
+}
+
+.list-item:hover {
+    opacity: 0.8;
+}
+
+.contact {
+    background-color: #505050;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+}
+
+/* navbar style  */
+
+.header {
+    width: 100%;
+    max-width: 1980px;
+    background-image: url(./images/banner1.png);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-info {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.header-headline {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: white;
+    padding-block: 1rem;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    color: #f1f1f1;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+
+.cta {
+    width: 200px;
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+form {
+    max-width: 1980px;
+    width: 100%;
+    margin-top: -50px;
+}
+
+form .container {
+    width: 80%;
+    margin-inline: auto;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.30);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100px;
+    gap: 2rem;
+    border-radius: 0.6rem;
+}
+
+.input {
+    flex-basis: 22%;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3px solid rgba(80, 80, 80, .30);
+    padding: 0.5rem 0;
+    border-radius: 5px;
+}
+
+.input input {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+
+.search {
+    background-color: #505050;
+    flex-basis: 15%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 300ms;
+
+}
+
+.search>* {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.search:hover {
+    opacity: 0.8;
+}
+
+
+/* product  */
+#product {
+    width: 100%;
+    max-width: 1980px;
+    padding-block: 4rem;
+}
+
+.product-info {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.product-info .product-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #505050;
+    width: 70%;
+}
+
+.product-btn {
+    background-color: transparent;
+    color: #505050;
+    font-size: 1.5rem;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+    transition: color 300ms;
+}
+
+.product-btn:hover {
+    color: #000;
+}
+
+#product .container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-card {
+    flex-basis: 28%;
+    /* background-color: royalblue; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 0.5px solid rgba(80, 80, 80, 0.30); */
+    box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.20);
+    padding-bottom: 1rem;
+    overflow: hidden;
+
+}
+
+.product-card:hover .product-img{
+    transform: scale(1.035);
+}
+
+.product-img {
+    flex-basis: 100%;
+    object-fit: cover;
+    transition:  300ms ease;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    /* background-color: red; */
+    width: 100%;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.card-info-content {
+    display: flex;
+    text-transform: uppercase;
+    min-height: 20px;
+    justify-self: center;
+    align-items: center;
+    gap: 0.5rem;
+    /* background-color: yellow; */
+    width: 90%;
+    margin-inline: auto;
+
+}
+
+.content {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: start;
+    min-height: 20px;
+    align-items: center;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline: auto;
+
+    gap: 10px;
+
+}
+
+.price p {
+    font-size: 1.5rem;
+    flex-basis: 30%;
+
+}
+
+.booking-btn {
+    color: #fff;
+    background-color: #505050;
+    flex-basis: 50%;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+/* product  */
