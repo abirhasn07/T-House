@@ -27,7 +27,7 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    height: 200vh;
+   
 
 }
 
@@ -134,7 +134,7 @@ nav .container {
     width: 100%;
     max-width: 1980px;
     background-image: url(./images/banner1.png);
-    height: 800px;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
