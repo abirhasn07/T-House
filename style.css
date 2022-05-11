@@ -124,6 +124,10 @@ nav .container {
     border-radius: 5px;
 }
 
+
+.mobile-menu{
+    display: none;
+}
 /* navbar style  */
 
 .header {
@@ -134,6 +138,7 @@ nav .container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 2;
 
 }
 
@@ -154,6 +159,7 @@ nav .container {
     align-items: center;
     flex-direction: column;
     height: 100%;
+    z-index: 2;
 
 }
 
@@ -293,6 +299,7 @@ form .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
